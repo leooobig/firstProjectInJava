@@ -10,8 +10,8 @@ public class Main {
 
         boolean incluidoNoPlano = true;
 
-        double notaDoFilme = (9.5 + 6.2 + 8.4) / 3;
-        System.out.println(notaDoFilme);
+        double media= (9.5 + 6.2 + 8.4) / 3;
+        System.out.println(media);
 
         String sinopse;
         sinopse = """
@@ -21,6 +21,9 @@ public class Main {
                 Ano de Lançamento:
                 """ + anoDoLancamento;
         System.out.println(sinopse);
+
+        //Casting de tipos de variáveis (Perdendo a precisão do calculo por retornar um valor inteiro)
+        int classificacao = (int) (media/2);
 
     }
 }
